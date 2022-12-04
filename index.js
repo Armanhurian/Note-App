@@ -60,6 +60,7 @@ addBtn.addEventListener('click',function(){
 
 removeBtn.addEventListener('click',function(){
    setTitleInput.value=" "
+   setTitleInput.style.backgroundColor='white'
 })
 
 
@@ -69,5 +70,7 @@ btnStart.addEventListener('click',function(){
     if(dateHours.value=="14" && dateMin.value=="15" && dateSec.value=="16"){
         document.body.style.background="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhO55dnQb8wVmdtcFvtFRucO0hidPAmTY1v9ObztlpWe0PprLtODMtX13xLfYlFXfZg94&usqp=CAU')"
         myFirstBox.style.display = 'none'
+    }else{
+        alert('just set your time in => 14 hours : 15 min : 16 sec ')
     }
 })
